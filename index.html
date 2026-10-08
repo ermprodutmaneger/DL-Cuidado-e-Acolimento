@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DL Cuidado e Acolhimento — Home Care para idosos | Daniela Lina</title>
+<meta name="description" content="Home Care para idosos com a enfermeira Daniela Lina. Atendimento em casa, com escuta, respeito e acolhimento para cada pessoa e sua família.">
+<meta name="theme-color" content="#FAF9F6">
+<meta name="author" content="DL Cuidado e Acolhimento">
+<!-- Depois de publicar, troque pela URL final, ex:
+     <link rel="canonical" href="https://SEU-USUARIO.github.io/dl-cuidado-e-acolhimento/"> -->
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="DL Cuidado e Acolhimento">
+<meta property="og:title" content="DL Cuidado e Acolhimento — Home Care para idosos">
+<meta property="og:description" content="Home Care para idosos com a enfermeira Daniela Lina. Atendimento em casa, com escuta, respeito e acolhimento para cada pessoa e sua família.">
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DL Cuidado e Acolhimento — Home Care para idosos">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DL Cuidado e Acolhimento — Home Care para idosos">
+<meta name="twitter:description" content="Home Care para idosos com a enfermeira Daniela Lina. Atendimento em casa, com escuta, respeito e acolhimento para cada pessoa e sua família.">
+<meta name="twitter:image" content="img/og.jpg">
+
+<!-- Ícones -->
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/favicon-180.png">
+
+<!-- Preload: fontes, logo e foto principal -->
+<link rel="preload" href="fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/logo.webp" as="image" type="image/webp" fetchpriority="high">
+<link rel="preload" href="img/hero.webp" as="image" type="image/webp" fetchpriority="high">
+
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+/* Define classes antes da primeira pintura: evita flash e desliga tudo se o JS falhar */
+(function () {
+  var d = document.documentElement;
+  d.classList.add('js');
+  try {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      d.classList.add('reduced');
+    } else if (sessionStorage.getItem('dl-intro') !== 'done') {
+      d.classList.add('intro-on');
+    }
+  } catch (e) { /* sessionStorage bloqueado: segue sem intro */ }
+  /* Rede de segurança: se o main.js não rodar, tudo volta a ficar visível */
+  window.setTimeout(function () {
+    if (!window.__DL_READY__) { d.classList.add('no-anim'); d.classList.remove('intro-on'); }
+  }, 4000);
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "DL Cuidado e Acolhimento",
+  "description": "Home Care para idosos com a enfermeira Daniela Lina. Atendimento em casa, com escuta, respeito e acolhimento para cada pessoa e sua família.",
+  "telephone": "+5511961147268",
+  "image": "img/og.jpg"
+}
+</script>
+</head>
+
+<body>
+
+<a class="skip" href="#main">Pular para o conteúdo</a>
+
+<!-- ===================== INTRO (abertura) ===================== -->
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro__inner">
+    <picture>
+      <source srcset="img/logo.webp" type="image/webp">
+      <img class="intro__logo" src="img/logo.png" alt="" width="1400" height="480" fetchpriority="high" decoding="async">
+    </picture>
+    <span class="intro__line"></span>
+  </div>
+</div>
+
+<!-- ===================== CURSOR CUSTOM ===================== -->
+<div class="cursor" id="cursor" aria-hidden="true">
+  <div class="cursor__ring"><span class="cursor__label">ver</span></div>
+  <div class="cursor__dot"></div>
+</div>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <a class="nav__logo" href="#inicio" aria-label="DL Cuidado e Acolhimento — início">
+    <picture>
+      <source srcset="img/logo.webp" type="image/webp">
+      <img src="img/logo.png" alt="DL Cuidado e Acolhimento" width="1400" height="480" decoding="async">
+    </picture>
+  </a>
+
+  <nav class="nav__links" aria-label="Navegação principal">
+    <a href="#inicio">Início</a>
+    <a href="#homecare">Home Care</a>
+    <a href="#sobre">Sobre Daniela</a>
+    <a href="#duvidas">Dúvidas</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <a class="btn btn--primary nav__cta" data-magnet href="https://wa.me/5511961147268" target="_blank" rel="noopener noreferrer">
+    <span class="btn__bg" aria-hidden="true"></span>
+    <span class="btn__label">Conversar pelo WhatsApp</span>
+    <span class="btn__arrow" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </span>
+  </a>
+
+  <button class="burger" id="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+    <span class="burger__box" aria-hidden="true"><span></span><span></span></span>
+  </button>
+</header>
+
+<!-- ===================== MENU MOBILE ===================== -->
+<nav class="menu" id="menu" aria-label="Menu">
+  <ul class="menu__list">
+    <li><a href="#inicio">Início</a></li>
+    <li><a href="#homecare">Home Care</a></li>
+    <li><a href="#sobre">Sobre Daniela</a></li>
+    <li><a href="#duvidas">Dúvidas</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <div class="menu__foot">
+    <p class="label">Atendimento</p>
+    <a class="menu__wa" href="https://wa.me/5511961147268" target="_blank" rel="noopener noreferrer">
+      Conversar pelo WhatsApp
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+    <span class="menu__logo">
+      <picture>
+        <source srcset="img/logo.webp" type="image/webp">
+        <img src="img/logo.png" alt="DL Cuidado e Acolhimento" width="1400" height="480" decoding="async">
+      </picture>
+    </span>
+  </div>
+</nav>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="inicio">
+    <div class="hero__glow" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__text" id="hero-text">
+        <p class="label" data-hero-kicker>Home Care para idosos</p>
+
+        <h1 class="hero__title" id="hero-title">Cuidado humano para cada fase da <em class="grad">vida.</em></h1>
+
+        <p class="hero__sub" data-hero-sub>
+          Home Care para idosos com a enfermeira Daniela Lina. Um atendimento em casa,
+          com escuta, respeito e acolhimento para cada pessoa e sua família.
+        </p>
+
+        <div class="hero__actions" data-hero-actions>
+          <a class="btn btn--primary" data-magnet href="https://wa.me/5511961147268" target="_blank" rel="noopener noreferrer">
+            <span class="btn__bg" aria-hidden="true"></span>
+            <span class="btn__label">Conversar com Daniela</span>
+            <span class="btn__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+          <a class="btn btn--ghost" data-magnet href="#homecare">Conhecer o Home Care</a>
+        </div>
+
+        <div class="scroll-ind" data-hero-scroll aria-hidden="true">
+          <span class="scroll-ind__txt">Role</span>
+          <span class="scroll-ind__rail"></span>
+        </div>
+      </div>
+
+      <figure class="hero__photo" data-hero-photo data-cursor="ver">
+        <div class="frame frame--soft" id="hero-frame">
+          <picture>
+            <source srcset="img/hero.webp" type="image/webp">
+            <img src="img/hero.jpg" alt="A enfermeira Daniela Lina" width="1536" height="1024" fetchpriority="high" decoding="async">
+          </picture>
+        </div>
+      </figure>
+    </div>
+
+    <p class="hero__side" aria-hidden="true">Daniela Lina · Enfermeira</p>
+  </section>
+
+  <!-- ===================== MANIFESTO ===================== -->
+  <section class="section manifesto">
+    <div class="wrap">
+      <p class="lead" data-manifesto>
+        Cuidar é mais do que executar tarefas. É olhar para a pessoa inteira — sua história,
+        seu ritmo, sua família — e estar presente, com escuta, respeito e acolhimento,
+        dentro da casa de quem precisa.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== HOME CARE (galeria horizontal) ===================== -->
+  <section class="gallery" id="homecare">
+    <div class="gallery__head">
+      <div class="eyebrow"><p class="label" data-reveal>Home Care</p></div>
+      <h2 data-split-lines>Cuidado que chega<br>até sua <em class="grad">casa.</em></h2>
+    </div>
+
+    <div class="gallery__viewport" id="gallery-viewport" tabindex="0" role="group" aria-label="Galeria Home Care">
+      <div class="gallery__track" id="gallery-track">
+
+        <!-- 01 -->
+        <article class="gcard gcard--text">
+          <p class="gcard__num">01</p>
+          <h3>Home Care para idosos</h3>
+          <p>
+            O atendimento domiciliar acontece onde a pessoa está: na sua casa, no seu ritmo
+            e com a sua história por perto. Se você está buscando esse cuidado para alguém,
+            converse com a Daniela. Ela explica como o atendimento funciona e entende,
+            junto com você, as necessidades e as possibilidades de cada pessoa.
+          </p>
+          <a class="btn btn--primary" data-magnet href="https://wa.me/5511961147268?text=Ol%C3%A1%2C%20Daniela%21%20Gostaria%20de%20conversar%20sobre%20o%20Home%20Care" target="_blank" rel="noopener noreferrer">
+            <span class="btn__bg" aria-hidden="true"></span>
+            <span class="btn__label">Conversar sobre Home Care</span>
+            <span class="btn__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+        </article>
+
+        <!-- 02 -->
+        <article class="gcard gcard--text">
+          <p class="gcard__num">02</p>
+          <h3>Para quem cuida de alguém importante</h3>
+          <p>
+            Cuidar de alguém que a gente ama também cansa, e quase sempre vem acompanhado
+            de dúvida: será que estou fazendo o melhor? Se você busca apoio para cuidar de
+            um idoso da sua família, a Daniela conversa com você — com calma, sem pressa
+            e sem prometer nada — para entender a situação e o que faz sentido para vocês.
+          </p>
+          <a class="btn btn--primary" data-magnet href="https://wa.me/5511961147268?text=Ol%C3%A1%2C%20Daniela%21%20Gostaria%20de%20conversar%20sobre%20o%20Home%20Care" target="_blank" rel="noopener noreferrer">
+            <span class="btn__bg" aria-hidden="true"></span>
+            <span class="btn__label">Falar sobre um familiar</span>
+            <span class="btn__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+        </article>
+
+        <!-- 03 -->
+        <figure class="gcard gcard--photo" data-cursor="ver">
+          <div class="frame reveal-clip">
+            <div class="frame__inner">
+              <picture>
+                <source srcset="img/galeria.webp" type="image/webp">
+                <img src="img/galeria.jpg" alt="A enfermeira Daniela Lina" width="733" height="1100" loading="lazy" decoding="async">
+              </picture>
+            </div>
+          </div>
+          <figcaption class="gcard__cap">Atendimento com escuta e presença</figcaption>
+        </figure>
+
+        <!-- 04 -->
+        <figure class="gcard gcard--quote">
+          <blockquote>Cada pessoa merece ser atendida com respeito, escuta e sensibilidade.</blockquote>
+          <figcaption>— D.L.</figcaption>
+        </figure>
+
+        <!-- 05 -->
+        <article class="gcard gcard--cta">
+          <p class="gcard__num">05</p>
+          <h3>Vamos conversar?</h3>
+          <p>Conte o que você ou sua família precisam. A Daniela explica os próximos passos.</p>
+          <a class="btn btn--primary" data-magnet href="https://wa.me/5511961147268" target="_blank" rel="noopener noreferrer">
+            <span class="btn__bg" aria-hidden="true"></span>
+            <span class="btn__label">Chamar no WhatsApp</span>
+            <span class="btn__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="gallery__progress" aria-hidden="true"><span id="gallery-progress"></span></div>
+  </section>
+
+  <!-- ===================== STATEMENT ===================== -->
+  <section class="statement">
+    <h2 data-split-lines>Escuta. Respeito. <em class="grad">Acolhimento.</em></h2>
+  </section>
+
+  <!-- ===================== SOBRE DANIELA ===================== -->
+  <section class="section sobre" id="sobre">
+    <div class="wrap">
+      <figure class="sobre__photo" data-cursor="ver">
+        <div class="frame reveal-clip">
+          <div class="frame__inner">
+            <picture>
+              <source srcset="img/sobre.webp" type="image/webp">
+              <img src="img/sobre.jpg" alt="A enfermeira Daniela Lina" width="733" height="1100" loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </div>
+      </figure>
+
+      <div class="sobre__text">
+        <div class="eyebrow"><p class="label" data-reveal>Sobre</p></div>
+        <h2 data-split-lines>Quem <em class="grad">cuida.</em></h2>
+
+        <p data-reveal>
+          Sou Daniela Lina, enfermeira e profissional dedicada ao cuidado e ao acolhimento.
+          Acredito que cada pessoa merece ser atendida com respeito, escuta e sensibilidade.
+          Meu trabalho é o cuidado domiciliar para idosos, sempre considerando a história
+          e as necessidades de cada pessoa e de sua família.
+        </p>
+
+        <ul class="sobre__chips" data-reveal>
+          <li class="chip">Enfermeira</li>
+          <li class="chip">Home Care para idosos</li>
+          <li class="chip">Atendimento domiciliar</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMO COMEÇAR ===================== -->
+  <section class="section passos">
+    <div class="wrap">
+      <div class="eyebrow"><p class="label" data-reveal>Primeiros passos</p></div>
+      <h2 data-split-lines>Como <em class="grad">começar.</em></h2>
+
+      <div class="passos__grid">
+        <article class="passo" data-reveal>
+          <p class="passo__num">01</p>
+          <h3>Chame</h3>
+          <p>A pessoa ou um familiar chama a Daniela pelo WhatsApp.</p>
+        </article>
+        <article class="passo" data-reveal>
+          <p class="passo__num">02</p>
+          <h3>Converse</h3>
+          <p>A Daniela entende a situação e o que a pessoa ou a família precisa.</p>
+        </article>
+        <article class="passo" data-reveal>
+          <p class="passo__num">03</p>
+          <h3>Combine</h3>
+          <p>As informações e os próximos passos são conversados diretamente com ela.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE ===================== -->
+  <div class="marquee marquee--a" aria-hidden="true">
+    <div class="marquee__inner" data-marquee data-dir="1">
+      <span>Home Care — Cuidado com idosos — Escuta — Acolhimento — Atendimento em casa — Família —&nbsp;</span>
+    </div>
+  </div>
+  <div class="marquee marquee--b" aria-hidden="true">
+    <div class="marquee__inner" data-marquee data-dir="-1">
+      <span>Cuidado humano para cada fase da vida —&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- ===================== DÚVIDAS ===================== -->
+  <section class="section faq" id="duvidas">
+    <div class="wrap">
+      <div class="eyebrow"><p class="label" data-reveal>Dúvidas frequentes</p></div>
+      <h2 data-split-lines>Perguntas <em class="grad">frequentes.</em></h2>
+
+      <div class="faq__list">
+        <details class="faq__item" data-reveal>
+          <summary><span class="faq__q">O que é o Home Care para idosos?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__a">
+            <p>
+              É o cuidado prestado no lugar onde a pessoa vive. Em vez de se deslocar, a pessoa
+              é atendida na própria casa, no seu ritmo, com a sua rotina e a presença da família
+              por perto. Cada atendimento é conversado caso a caso — converse com a Daniela para
+              entender como isso funciona na prática.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span class="faq__q">Como conversar sobre Home Care para um familiar?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__a">
+            <p>
+              Com calma e no tempo dessa pessoa. Vale começar escutando o que ela sente e o que
+              a preocupa, sem pressa de decidir. Quando fizer sentido, a Daniela pode conversar
+              com vocês e explicar o atendimento com tranquilidade — sem compromisso.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span class="faq__q">Como saber se o Home Care faz sentido para a minha família?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__a">
+            <p>
+              Cada situação é única, e não há uma resposta que sirva para todos os casos. O melhor
+              caminho é contar o caso de vocês: a partir da conversa, vocês entendem juntos o que
+              é possível e o que faz sentido neste momento.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq__item" data-reveal>
+          <summary><span class="faq__q">Como faço para entrar em contato?</span><span class="faq__icon" aria-hidden="true"></span></summary>
+          <div class="faq__a">
+            <p>
+              Você pode chamar a Daniela pelo WhatsApp. Conte o que você ou sua família precisam
+              e ela explica os próximos passos e as informações do atendimento.
+              <a href="https://wa.me/5511961147268" target="_blank" rel="noopener noreferrer">Chamar a Daniela</a>.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTATO ===================== -->
+  <section class="section contato" id="contato">
+    <div class="wrap">
+      <div class="eyebrow"><p class="label" data-reveal>Contato</p></div>
+      <h2 data-split-lines>Vamos conversar sobre o <em class="grad">cuidado</em> que você procura?</h2>
+
+      <p class="lead contato__lead" data-reveal>
+        Fale com Daniela e conte o que você ou sua família precisam. Ela poderá explicar
+        os próximos passos e as informações do atendimento.
+      </p>
+
+      <div class="contato__actions" data-reveal>
+        <a class="btn btn--primary" data-magnet href="https://wa.me/5511961147268" target="_blank" rel="noopener noreferrer">
+          <span class="btn__bg" aria-hidden="true"></span>
+          <span class="btn__label">Chamar a Daniela no WhatsApp</span>
+          <span class="btn__arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
+        </a>
+        <a class="contato__link" href="https://wa.me/5511961147268?text=Ol%C3%A1%2C%20Daniela%21%20Gostaria%20de%20conversar%20sobre%20o%20Home%20Care" target="_blank" rel="noopener noreferrer">
+          Conversar sobre Home Care
+        </a>
+      </div>
+
+      <!-- ===================== PRÉ-FORMULÁRIO → WHATSAPP ===================== -->
+      <form class="preform" id="preform" novalidate>
+        <div class="preform__head">
+          <p class="label" data-reveal>Pré-atendimento</p>
+          <h3 data-reveal>Conte um pouco antes de chamar.</h3>
+          <p class="preform__intro" data-reveal>
+            Preencha os campos e as informações já vão escritas na sua conversa com a Daniela.
+            Nada fica salvo aqui: o formulário só abre o seu WhatsApp com a mensagem pronta.
+          </p>
+        </div>
+
+        <div class="preform__fields">
+          <div class="field" data-reveal>
+            <label class="field__label" for="pf-nome">Seu nome</label>
+            <input class="field__input" id="pf-nome" name="nome" type="text"
+                   autocomplete="name" maxlength="60" required aria-required="true"
+                   placeholder="Como você quer ser chamado(a)?"
+                   aria-describedby="err-nome">
+            <p class="field__err" id="err-nome" role="alert"></p>
+          </div>
+
+          <div class="field" data-reveal>
+            <label class="field__label" for="pf-necessidade">Qual é a necessidade?</label>
+            <textarea class="field__input field__area" id="pf-necessidade" name="necessidade"
+                      rows="3" maxlength="300" required aria-required="true"
+                      placeholder="Conte com as suas palavras o que você ou a sua família estão precisando."
+                      aria-describedby="help-necessidade err-necessidade"></textarea>
+            <p class="field__help" id="help-necessidade">Pode escrever sem preocupação — não existe resposta certa.</p>
+            <p class="field__err" id="err-necessidade" role="alert"></p>
+          </div>
+
+          <div class="field" data-reveal>
+            <label class="field__label" for="pf-historia">
+              Um pouco sobre a história clínica <span class="field__opt">(opcional)</span>
+            </label>
+            <textarea class="field__input field__area" id="pf-historia" name="historia"
+                      rows="4" maxlength="500"
+                      placeholder="Se quiser, escreva o que achar importante: acompanhamentos, medicações, cirurgias, alergias."
+                      aria-describedby="help-historia"></textarea>
+            <p class="field__help" id="help-historia">
+              É um dado sensível: escreva só o que você se sentir à vontade para compartilhar pelo WhatsApp.
+            </p>
+          </div>
+        </div>
+
+        <div class="preform__foot" data-reveal>
+          <button class="btn btn--primary" type="submit" data-magnet>
+            <span class="btn__bg" aria-hidden="true"></span>
+            <span class="btn__label">Enviar para o WhatsApp</span>
+            <span class="btn__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </button>
+
+          <p class="preform__note">
+            Ao enviar, as informações seguem para a sua conversa com a Daniela no WhatsApp.
+            Ela responde pessoalmente e explica os próximos passos.
+          </p>
+
+          <p class="preform__ok" id="preform-ok" role="status" hidden>
+            <span class="preform__ok-t">Pronto, é só confirmar no WhatsApp.</span>
+            Com essas informações, vamos elaborar um plano especial para você.
+            <a class="preform__ok-link" id="preform-fallback" href="#" target="_blank" rel="noopener noreferrer">Se o WhatsApp não abriu, toque aqui.</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== RODAPÉ ===================== -->
+<footer class="footer">
+  <span class="footer__logo">
+    <picture>
+      <source srcset="img/logo.webp" type="image/webp">
+      <img src="img/logo.png" alt="DL Cuidado e Acolhimento" width="1400" height="480" loading="lazy" decoding="async">
+    </picture>
+  </span>
+  <p class="footer__note">© <span id="year">2026</span> DL Cuidado e Acolhimento</p>
+  <a class="footer__top" href="#inicio" data-top>
+    Voltar ao topo
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </a>
+</footer>
+
+<!-- ===================== WHATSAPP FLUTUANTE ===================== -->
+<a class="wafloat" id="wafloat" href="https://wa.me/5511961147268" target="_blank" rel="noopener noreferrer" aria-label="Chamar a Daniela no WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 4C9.96 4 5.03 8.93 5.03 15.01c0 1.94.51 3.83 1.48 5.5L5 28l7.66-1.45a11 11 0 0 0 5.38 1.37h.01c6.08 0 11.01-4.93 11.01-11.01C29.06 8.93 24.12 4 16.04 4Zm0 20.15h-.01a9.1 9.1 0 0 1-4.63-1.27l-.33-.2-3.42.65.68-3.34-.22-.34a9.06 9.06 0 0 1-1.39-4.84c0-5.03 4.1-9.12 9.13-9.12 2.44 0 4.73.95 6.45 2.67a9.05 9.05 0 0 1 2.68 6.45c0 5.03-4.09 9.12-9.12 9.12Zm5.01-6.83c-.27-.14-1.62-.8-1.87-.89-.25-.09-.43-.14-.62.14-.18.27-.71.89-.87 1.07-.16.18-.32.2-.59.07a7.4 7.4 0 0 1-2.18-1.34 8.1 8.1 0 0 1-1.5-1.86c-.16-.27-.02-.42.12-.56.13-.13.27-.32.41-.48.13-.16.18-.27.27-.45.09-.18.04-.34-.02-.48-.07-.14-.62-1.5-.85-2.05-.22-.54-.45-.47-.62-.48h-.53c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29s.98 2.66 1.12 2.84c.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.56.58.66.21 1.25.18 1.72.11.53-.08 1.62-.66 1.85-1.3.23-.64.23-1.19.16-1.3-.07-.11-.25-.18-.52-.32Z"/></svg>
+</a>
+
+<!-- ===================== SCRIPTS ===================== -->
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/vendor/SplitText.min.js"></script>
+<script src="js/vendor/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
